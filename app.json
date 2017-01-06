@@ -1,0 +1,38 @@
+{
+  "name": "kevinkoelzer.github.io",
+  "scripts": {
+  },
+  "env": {
+    "APP_NAME": {
+      "required": true
+    },
+    "CORS_ORIGINS": {
+      "required": true
+    },
+    "CURRENCY": {
+      "required": true
+    },
+    "ERROR_REDIRECT_URI": {
+      "required": true
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "required": true
+    },
+    "STRIPE_SECRET_KEY": {
+      "required": true
+    },
+    "SUCCESS_REDIRECT_URI": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
