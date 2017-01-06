@@ -66,8 +66,8 @@
 
 				<fieldset>
 
-						<div CLASS ="ROW">
-							<section>
+						<div class ="row">
+							<section class = "col col-12">
 								<label class="input">
 									<input type="text" name="address" placeholder="Address">
 							</label>
@@ -134,11 +134,12 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select>
+</label>
 						</section>
 
 						<section class="col col-3">
 							<label class="input">
-								<input type="text" name="code" placeholder="Post code">
+								<input type="text" name="code" placeholder="ZIP">
 							</label>
 						</section>
 					</div>
@@ -243,12 +244,12 @@
 						},
 						email:
 						{
-							required: true,
+							required: false,
 							email: true
 						},
 						phone:
 						{
-							required: true
+							required: false
 						},
 						country:
 						{
@@ -261,7 +262,10 @@
 						code:
 						{
 							required: true,
-							digits: true
+							digits: true,
+							minlength: [5],
+							maxlength: [5]
+
 						},
 						address:
 						{
@@ -305,7 +309,7 @@
 						email:
 						{
 							required: 'Please enter your email address',
-							email: 'Please enter a VALID email address'
+							email: 'Please enter a valid email address'
 						},
 						phone:
 						{
@@ -321,16 +325,16 @@
 						},
 						code:
 						{
-							required: 'Please enter code',
+							required: 'Please enter you zip code',
 							digits: 'Digits only please'
 						},
 						address:
 						{
-							required: 'Please enter your full address'
+							required: 'Please enter your street address'
 						},
 						name:
 						{
-							required: 'Please enter name on your card'
+							required: 'Please enter the name on your card'
 						},
 						card:
 						{
@@ -348,7 +352,7 @@
 						year:
 						{
 							required: 'Enter year',
-							digits: 'Digits only please'
+							digits: 'Digits only please',
 						}
 					},
 
