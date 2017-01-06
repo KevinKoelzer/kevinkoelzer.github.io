@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body>input
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<form>
+  action="https://kaypharmacystripe.herokuapp.com/" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="YOUR_PUBLISHABLE_KEY"
+        data-name="YOUR_NAME"
+        data-description="YOUR_DESCRIPTION"
+        data-amount="YOUR_AMOUNT"
+    ></script>
+    <input name="amount" value="YOUR_AMOUNT" type="hidden">
+    <input name="description" value="YOUR_DESCRIPTION" type="hidden">
+    <input name="metadata" value="YOUR_METADATA" type="hidden">
+</form>
 </body>
 </html>
