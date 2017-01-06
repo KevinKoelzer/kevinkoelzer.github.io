@@ -28,7 +28,16 @@
 
 	<body class="bg-purple">
 		<div class="body">
-							<header>Checkout form</header>
+			<form action="https://kaypharmacystripe.herokuapp.com/" method=POST id="sky-form" class="sky-form">
+			<script
+					src="https://checkout.stripe.com/checkout.js"
+					class="stripe-button"
+					data-key="YOUR_PUBLISHABLE_KEY"
+					data-name="YOUR_NAME"
+					data-description="YOUR_DESCRIPTION"
+					data-amount="YOUR_AMOUNT"
+			></script>
+				<header>Checkout form</header>
 
 				<fieldset>
 					<div class="row">
